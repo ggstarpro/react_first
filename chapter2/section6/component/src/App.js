@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
+import { SecondaryButton } from './components/atoms/button/SecondaryButton';
+import { SearchInput } from './components/molecules/SearchInput';
+import { UserCard } from './components/organisums/user/UserCard';
+import { HeaderOnly } from './components/templates/HeaderOnly';
+import { BrowserRouter } from 'react-router-dom';
+import { DefaultLayout } from './components/templates/DefaultLayout';
+import { Router } from './router/Router';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router />
+
+
+    // <BrowserRouter>
+    //   <DefaultLayout>
+    //     <PrimaryButton>テスト</PrimaryButton>
+    //     <SecondaryButton>検索</SecondaryButton>
+    //     <br />
+    //     <SearchInput />
+    //     <UserCard user={user} />
+    //   </DefaultLayout>
+    // </BrowserRouter>
   );
 }
 

@@ -36,3 +36,12 @@ AtomやMoleculeの組み合わせで構成される単体である程度の意�
 最終的に表示される１画面
 * ページ遷移毎に表現される各画面
 
+##
+npm install react-router-dom@5.3.0
+npm i styled-components
+
+## Atomic Designのポイント
+### あくまでもベース
+### 初めから分けない
+### 要素の関心を意識
+何に関しがあるコンポーネントなのかを意識しながら分割したりpropsを定義したりする。
