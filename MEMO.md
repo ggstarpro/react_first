@@ -1,2 +1,2 @@
-npx create-react-app todo-app
+npx create-react-app typescript
 
