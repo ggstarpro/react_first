@@ -1,0 +1,15 @@
+npx create-react-app my-app --template typescript
+npm i axios
+
+
+
+# カスタムフック
+* ただの関数
+* hooksの各機能を使用
+* コンポーネントからロジックを分離
+* 使い回し、 テスト容易, 見通し良くなる
+* 自由に作れる！use~という名前にする
+
+
+https://jsonplaceholder.typicode.com/
+https://jsonplaceholder.typicode.com/users
