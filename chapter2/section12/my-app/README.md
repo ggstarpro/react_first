@@ -31,3 +31,6 @@ https://ant.design/
 
 # install
 npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
+npm install react-router-dom@5.3.0
+* typescript
+npm install --save @types/react-router-dom
