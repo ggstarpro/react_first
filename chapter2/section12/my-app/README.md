@@ -35,3 +35,7 @@ npm install react-router-dom@5.3.0
 * typescript
 npm install --save @types/react-router-dom
 npm i @chakra-ui/icons
+npm i axios
+
+* api
+https://jsonplaceholder.typicode.com/users
