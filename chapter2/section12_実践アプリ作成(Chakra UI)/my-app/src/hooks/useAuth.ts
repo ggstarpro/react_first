@@ -17,11 +17,13 @@ export const useAuth = () => {
           showMessage({title: "ログインしました。", status: "success"});
           history.push('/home');
         } else {
-          alert('ユーザない');
+          showMessage({title: "ユーザが見つかりません。", status: "error"});
         }
       })
-      .catch(() => alert('ログインできません'))
+      .catch(() =>
+        showMessage({title: "ログインできません。", status: "error"})
+      )
       .finally(() => setLoading(false));
-  }, [history]);
+  }, [history, showMessage]);
   return { login, loading }
 }
